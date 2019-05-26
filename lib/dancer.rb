@@ -5,6 +5,7 @@ require_relative './fancy_dance.rb'
 
 class Dancer
   attr_accessor :name
+  include Dance
   extend FancyDance::ClassMethods
   include FancyDance::InstanceMethods
 end
